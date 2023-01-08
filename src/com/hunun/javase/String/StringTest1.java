@@ -1,5 +1,7 @@
 package com.hunun.javase.String;
 
+import java.util.Locale;
+
 public class StringTest1 {
     public static void main(String[] args) {
         String.valueOf("abc");
@@ -71,6 +73,16 @@ public class StringTest1 {
              System.out.println(ch1[i]);
          }
 
+        //大写字母转换成小写
+        System.out.println("ABcdeFGcde".toLowerCase());
+
+         //小写字母转换成大写
+        System.out.println("ABcdeFGcde".toUpperCase());
+
+         //每一个locale对象都代表一个特定的政治文化，地区和创建方法
+        Locale locale2=new Locale("汉语", "中国");
+        System.out.println("locale2"+locale2);
+        System.out.println("ABcdeFGcde".toLowerCase(locale2));
 
     }
 }
