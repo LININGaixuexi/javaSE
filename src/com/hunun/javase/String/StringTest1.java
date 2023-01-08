@@ -83,6 +83,6 @@ public class StringTest1 {
         Locale locale2=new Locale("汉语", "中国");
         System.out.println("locale2"+locale2);
         System.out.println("ABcdeFGcde".toLowerCase(locale2));
-
+      int a;
     }
 }
